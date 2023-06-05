@@ -173,10 +173,24 @@ footer{
 }
 
 #menu .retirosBtn button{
+    background-color: rgba(255, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
 }
 
 #menu .consignacionesBtn{
     width: 40%;
     height: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    row-gap: 10px;
+}
+
+#menu .consignacionesBtn button{
+    background-color: rgba(255, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
 }

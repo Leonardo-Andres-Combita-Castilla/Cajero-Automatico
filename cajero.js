@@ -1,17 +1,17 @@
 
 const usuarios = [
 
-    {nombre: 'leo', clave: '1234', saldo: 1000},
-    {nombre: 'nata', clave: '4321', saldo: 500},
+    {nombre: 'leo', clave: '1234', saldo: 500},
+    {nombre: 'nata', clave: '4321', saldo: 1000},
     {nombre: 'dany', clave: '2121', saldo: 200}
 
 ]
 
+// let fotoUsuario = document.getElementById("imgUs");
+
 const validarUsuario = () => {
 
     let usuario = document.getElementById("usuarioInput").value;
-
-    let fotoUsuario = document.getElementById("imgUs");
 
     if (usuario === usuarios[0].nombre){
         window.location = 'clave.html';
@@ -53,9 +53,20 @@ const retirar = (dinero) => {
     let usuario = localStorage.getItem("usuarioActual");
 
     if (usuario === usuarios[0].nombre && dinero <= usuarios[0].saldo){
-        let total = (usuarios[0].saldo - dinero)
+        total = (usuarios[0].saldo - dinero)
+        usuarios[0].saldo = total
         alert (`saldo actual ${total}`)
-    }   
+    } else if (usuario === usuarios[1].nombre && dinero <= usuarios[1].saldo){
+        total = (usuarios[1].saldo - dinero)
+        usuarios[1].saldo = total
+        alert (`saldo actual ${total}`)
+    } else if (usuario === usuarios[2].nombre && dinero <= usuarios[2].saldo){
+        total = (usuarios[2].saldo - dinero)
+        usuarios[2].saldo = total
+        alert (`saldo actual ${total}`)
+    } else {
+        alert ('Solicitud invalida')
+    }
     
 }
 
@@ -67,8 +78,19 @@ const retirarOtro = () => {
 
     if (usuario === usuarios[0].nombre && valorRetirado <= usuarios[0].saldo){
         let total = (usuarios[0].saldo - valorRetirado)
+        usuarios[0].saldo = total
         alert (`saldo actual ${total}`)
-    }   
+    } else if (usuario === usuarios[1].nombre && valorRetirado <= usuarios[1].saldo){
+        let total = (usuarios[1].saldo - valorRetirado)
+        usuarios[1].saldo = total
+        alert (`saldo actual ${total}`)
+    } else if (usuario === usuarios[2].nombre && valorRetirado <= usuarios[2].saldo){
+        let total = (usuarios[2].saldo - valorRetirado)
+        usuarios[2].saldo = total
+        alert (`saldo actual ${total}`)
+    } else {
+        alert ('Solicitud invalida')
+    }
     
 }
 
@@ -79,8 +101,19 @@ const consignar = () => {
     let valorConsignado = parseFloat (prompt ('cuanto quieres consignar'));
 
     if (usuario === usuarios[0].nombre && valorConsignado !== null && valorConsignado !== ""){
-        let total = usuarios[0].saldo + valorConsignado
+        let total = usuarios[0].saldo + valorConsignado;
+        usuarios[0].saldo = total
         alert (`saldo actual ${total}`)
+    } else if (usuario === usuarios[1].nombre && valorConsignado !== null && valorConsignado !== ""){
+        let total = usuarios[1].saldo + valorConsignado;
+        usuarios[1].saldo = total
+        alert (`saldo actual ${total}`)
+    } else if (usuario === usuarios[2].nombre && valorConsignado !== null && valorConsignado !== ""){
+        let total = usuarios[2].saldo + valorConsignado;
+        usuarios[2].saldo = total
+        alert (`saldo actual ${total}`)
+    } else {
+        alert ('Solicitud invalida')
     }
 
 }
@@ -91,6 +124,12 @@ const miSaldo = () => {
 
     if (usuario === usuarios[0].nombre){
         alert (`Su saldo actual es de ${usuarios[0].saldo}`)
+    } else if (usuario === usuarios[1].nombre){
+        alert (`Su saldo actual es de ${usuarios[1].saldo}`)
+    } else if (usuario === usuarios[2].nombre){
+        alert (`Su saldo actual es de ${usuarios[2].saldo}`)
+    } else {
+        alert ('Solicitud invalida')
     }
 }
 
