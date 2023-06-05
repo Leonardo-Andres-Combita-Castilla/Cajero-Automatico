@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloCajero.css">
+    <title>Usuario</title>
+</head>
+<body>
+
+    <h1>Ahorra.com</h1>
+
+    <section id="acceso1">
+
+        <div class="tarjetaUsuario">
+
+            <div>
+                <label for="usuario">Ingresa tu usuario</label> 
+            </div>
+
+            <div>
+                <input type="text" name="usuario" id="usuarioInput" maxlength="30" required>
+            </div>
+
+            <div>
+                <button id="btn1" onclick="validarUsuario()">Siguiente</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>Recuerda que todas tus transacciones estan protegidos por DEV.F</p>
+
+    </footer>
+
+    <script src="cajero.js"></script>
+</body>
+</html>

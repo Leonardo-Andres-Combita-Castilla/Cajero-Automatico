@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloCajero.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Ahorra.com</h1>
+
+    <section id="menu">
+
+        <div class="retirosBtn">
+
+            <button onclick="retirar(10)">Retirar 10 $</button>
+            <button onclick="retirar(50)">Retirar 50 $</button>
+            <button onclick="retirar(100)">Retirar 100 $</button>
+            <button onclick="retirar(500)">Retirar 500 $</button>
+            <button onclick="retirar(700)">Retirar 700 $</button>
+            <button onclick="retirar(900)">Retirar 900 $</button>
+    
+        </div>
+    
+        <div class="consignacionesBtn">
+    
+            <button onclick="retirarOtro()">Retirar un monto libre</button>
+            <button onclick="consignar()">Consignar</button>
+            <button onclick="miSaldo()">Consultar saldo</button>
+            <button id="btnSalir" onclick="salir()">Salir</button>
+    
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>Recuerda que todas tus transacciones estan protegidos por DEV.F</p>
+
+    </footer>
+
+    <script src="cajero.js"></script>
+</body>
+</html>

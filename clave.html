@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloCajero.css">
+    <title>Contraseña</title>
+</head>
+<body>
+
+    <h1>Ahorra.com</h1>
+
+    <section id="acceso2">
+
+        <div class="imagenUsuario">
+
+            <img src="imagenes/usuarioAll.png" alt="Imagen usuario" id="imgUs">
+
+            <p>verifica que la imagen corresponda a tu usuario</p>
+
+        </div>
+
+        <div class="tarjetaContraseña">
+
+            <div>
+                <label for="password">Ingresa tu clave personal</label>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div>
+                <button id="btn2" onclick="validarClave()">Siguiente</button>
+            </div>
+            <div>
+                <button id="btnSalir" onclick="salir()">Salir</button>
+            </div>
+
+        </div>
+        
+    </section> 
+
+    <footer>
+
+        <p>Recuerda que todas tus transacciones estan protegidos por DEV.F</p>
+
+    </footer> 
+
+
+<script src="cajero.js"></script>
+</body>
+</html>

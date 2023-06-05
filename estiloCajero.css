@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 99vh;
+    background-color: rgb(255, 255, 255);
+}
+
+/* estilos pagina 1 */
+
+h1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 19, 19);
+    border-bottom: solid;
+    border-color: rgb(89, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#acceso1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#acceso1 .tarjetaUsuario{
+    width: 600px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(221, 19, 19, 0.891);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(89, 0, 0);
+    border-radius: 20px;
+}
+
+#acceso1 .tarjetaUsuario div {
+    width: 300px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+}
+
+#acceso1 .tarjetaUsuario div input{
+    width: 180px;
+    height: 30px;
+}
+
+#btn1{
+   width: 100px;
+   height: 50px; 
+}
+
+footer{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 19, 19);
+    border-top: solid;
+    border-color: rgb(89, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+
+/* etilos pagina 2 */
+
+
+#acceso2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#acceso2 .imagenUsuario{
+    width: 230px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#acceso2 .imagenUsuario #imgUs{
+    width: 220px;
+    height: auto;
+    margin: 20px;
+}
+
+#acceso2 .tarjetaContraseña {
+    width: 600px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(221, 19, 19, 0.891);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(89, 0, 0);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#acceso2 .tarjetaContraseña div {
+    width: 300px;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+}
+
+#acceso2 .tarjetaContraseña label{
+    width: 180px;
+    height: 30px;
+}
+
+#acceso2 .tarjetaContraseña input{
+    width: 180px;
+    height: 30px;
+}
+
+#btn2{
+   width: 100px;
+   height: 50px; 
+}
+
+#btnSalir{
+    width: 100px;
+    height: 50px; 
+ }
+
+ /* etilos pagina 3 */
+
+#menu{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu .retirosBtn{
+    width: 40%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#menu .retirosBtn button{
+    font-size: x-large;
+}
+
+#menu .consignacionesBtn{
+    width: 40%;
+    height: 80%;
+}
